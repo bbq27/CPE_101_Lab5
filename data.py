@@ -1,5 +1,5 @@
-# Name:
-# Section:
+# Name: Berfredd Quezon
+# Section: 11
 #########################################################
 import math
 from typing import Any
@@ -20,7 +20,8 @@ class Time:
     # Provide a developer-friendly string representation of the object.
     # input: Time for which a string representation is desired. 
     # output: string representation
-    #def __repr__(self):
+    def __repr__(self):
+        return 'Time {}:{}:{}'.format(self.hour, self.minute, self.second)
 
 
     # Compare the Time object with another value to determine equality.

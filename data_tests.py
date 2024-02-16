@@ -1,5 +1,5 @@
-# Name:
-# Section:
+# Name: Berfredd Quezon
+# Section: 11
 #########################################################
 import data
 import unittest
@@ -33,8 +33,13 @@ class TestCases(unittest.TestCase):
         self.assertNotEqual(time1, time2)
 
     #### Add tests for Time.__repr__
-    
+    def test_Time_repr1(self):
+        time = data.Time(5, 17, 50)
+        self.assertEqual(repr(time), 'Time 5:17:50')
 
+    def test_Time_repr2(self):
+        time = data.Time(17, 42, 0)
+        self.assertEqual(repr(time), 'Time 17:42:0')
 
     #### Point tests
     def test_Point_1(self):
